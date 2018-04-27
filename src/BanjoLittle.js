@@ -6,7 +6,9 @@ class BanjoLittle extends Component {
     this.state = {
       name:"",
       verb:"",
-      inputText: "",
+      inputText: "「お前が代表戦を出ないのは勝手だ。けどそうなった場合、誰が代わりに代表戦をすると思う？」\n"+
+                 "「…」\n"+
+                 "「万丈だ。」\n",
     }
   }
 
