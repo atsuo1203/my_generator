@@ -20,7 +20,10 @@ class App extends Component {
   }
 
   handleMakeWord = () => {
-    var resultText = "hoge" + this.state.name + "fuga" + this.state.verb
+    var resultText = "「お前が"+this.state.name+"を"+this.state.verb+
+                     "のは勝手だ。けどそうなった場合、誰が代わりに"+this.state.name+"をすると思う？」\n"+
+                     "「…」\n"+
+                     "「万丈だ。」\n"
     this.setState({inputText: resultText})
   }
 
@@ -41,7 +44,7 @@ class App extends Component {
           作成
         </button>
         <br/>
-        <textarea name="kanso" rows="4" cols="40" value= {this.state.inputText} />
+        <textarea name="kanso" rows="10" cols="50" value= {this.state.inputText} />
         <br/>
       </div>
     );
